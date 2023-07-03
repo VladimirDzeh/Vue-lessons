@@ -84,15 +84,6 @@ export default {
 
     methods: {
         switchPage(e) {
-
-            this.btns.forEach(btn => {
-                if (btn.id === e.target.id) {
-                    this.btnNav.activeNavBtn = true;
-                } else {
-                    this.btnNav.activeNavBtn = false;
-                }
-            });
-
             this.$emit('switch-pages', e.target.id)
         },
     },
