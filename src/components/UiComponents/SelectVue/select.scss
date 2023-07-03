@@ -1,0 +1,46 @@
+.select {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid $border-default-disabled;
+        border-radius: 4px;
+        padding: 10px 9px 10px 12px;
+    }
+    &__name {
+        width: 100%;
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+    }
+    &__icon-clear {
+        color: $font-placeholder;
+    }
+    &__icon-arrow {
+        color: $font-disabled;
+    }
+    &__list {
+        position: absolute;
+        top: 43px;
+        right: 0;
+        z-index: 6;
+        background-color: $bg-secondary;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        padding: 8px 0;
+        width: 100%;
+    }
+    &__item {
+        padding: 8px 16px;
+        cursor: pointer;
+        &:hover {
+            background-color: $bg-primary-disabled;
+        }
+    }
+}

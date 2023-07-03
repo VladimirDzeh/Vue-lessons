@@ -1,0 +1,10 @@
+.plug {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid $border-default-disabled;
+    border-radius: 4px;
+    height: calc(100vh - 138px);
+}

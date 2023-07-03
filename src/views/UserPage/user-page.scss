@@ -1,0 +1,51 @@
+.user {
+    display: flex;
+    gap: 24px;
+    &__photo {
+        padding: 10px;
+        position: relative;
+        align-self: flex-start;
+    }
+    &__icon {
+        cursor: pointer;
+        &:hover ~ .user__dropdown {
+            display: block;
+        }
+    }
+    &__dropdown {
+        display: none;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        z-index: 6;
+        &:hover {
+            display: block;
+        }
+    }
+    &__btn {
+        background-color: $bg-secondary;
+    }
+    .title-block {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 24px;
+        &__name {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        &__dropdown {
+            margin-left: auto;
+        }
+    }
+    .about-block {
+        &__title {
+            color: $font-disabled;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+
+
+

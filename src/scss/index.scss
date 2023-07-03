@@ -1,0 +1,30 @@
+@import '@/scss/vars.scss';
+@import '@/scss/fonts.scss';
+@import '@/scss/reset.scss';
+@import '@/scss/global.scss';
+@import '@/scss/media.scss';
+
+// UI Components
+
+@import "@/components/UiComponents/GlobalBtn/global-btn.scss";
+@import "@/components/UiComponents/DropdownMenu/dropdown-menu.scss";
+@import "@/components/UiComponents/InputVue/input.scss";
+@import '@/components/UiComponents/SelectVue/select.scss';
+@import '@/components/UiComponents/TextareaVue/textarea.scss';
+@import '@/components/UiComponents/StatusVue/status.scss';
+
+
+// Components
+
+@import "@/components/NavBar/nav-bar.scss";
+@import "@/components/PlugVue/plug-vue.scss";
+@import "@/components/ProjectListItem/project-list-item.scss";
+@import "@/components/TaskListItem/task-list-item.scss";
+
+// Views 
+
+@import '@/views/UserPage/user-page.scss';
+@import '@/views/CreateTaskPage/create-task-page.scss';
+
+
+

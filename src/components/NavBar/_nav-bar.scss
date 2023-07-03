@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+   
+    &__icon {
+        @extend %icon-style;
+        pointer-events: none;
+    }
+}
+    

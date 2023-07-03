@@ -1,0 +1,55 @@
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 0px 16px 8px;
+    border-bottom: 1px solid $border-active;
+    gap: 16px;
+    cursor: pointer;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    &__group {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 4px;
+    }
+    &__title {
+        height: 38px;
+        flex: 1 1 auto;
+        font-weight: 400;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    &__description {
+        display: flex;
+        gap: 16px;
+    }
+    &__set {
+        flex: 1 1 auto;
+        display: flex;
+        gap: 16px;
+    }
+    &__code {
+        max-width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__user-info {
+        color: $font-disabled;
+    }
+    &__admin-info {
+        color: $font-disabled;
+    }
+    &__btn {
+        background: transparent;
+        display: none;
+    }
+    &:hover .list-item__btn {
+        display: flex;
+    }
+}

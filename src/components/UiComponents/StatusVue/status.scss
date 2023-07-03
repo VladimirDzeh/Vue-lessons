@@ -1,0 +1,17 @@
+.status {
+    padding: 0px 8px;
+    color: $font-secondary;
+    border-radius: 4px;
+    &-bronze {
+        background-color: $border-bronze;
+    }
+    &-blue {
+        background-color: $bg-primary-default;
+    }
+    &-red {
+        background-color: $border-error;
+    }
+    &-grey {
+        background-color: $font-disabled;
+    }
+}
