@@ -1,6 +1,6 @@
 <template>
   <div class="plug">
-        <p class="plag__text">{{plagText}}</p>
+        <p class="plug__text">{{plugText}}</p>
         <GlobalBtn 
             class="plug__btn"
             :class="['global-btn__blue']"
@@ -20,7 +20,7 @@ export default {
     },
 
     props: {
-        plagText: {
+        plugText: {
             type: String,
             required: true
         }

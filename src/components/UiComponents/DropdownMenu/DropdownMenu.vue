@@ -6,25 +6,23 @@
         <slot></slot>
         <ul 
             class="dropdown-menu__list"
+            v-click-outside="onClickOutside"
             v-if="visible"
         >
             <li 
                 class="dropdown-menu__item"
-                v-for="itemName in itemNames"
-                :key="itemName"
+                v-for="(itemName, index) in itemNames"
+                :key="index"
             >
-                <a 
-                    class="dropdown-menu__link" 
-                    href="#"
-                >
                 {{itemName}}
-                </a>
             </li>
         </ul>
     </div>
 </template>
 
 <script>
+import vClickOutside from 'v-click-outside';
+
 export default {
     name: 'DropdownMenu',
 
@@ -40,6 +38,16 @@ export default {
             visible: false
         }
     },
+
+    directives: {
+        clickOutside: vClickOutside.directive
+    },
+
+    methods: {
+      onClickOutside () {
+        this.visible = false;
+      }
+    }
 
 
 }

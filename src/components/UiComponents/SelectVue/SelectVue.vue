@@ -23,11 +23,11 @@
             <slot></slot>
             <p  
                 class="select__item"
-                v-for="item in info"
-                :key="item.name"
+                v-for="(item, index) in info"
+                :key="index"
                 @click="chooseItem(item)"
             >
-                {{item.name}}
+                {{item[keyName]}}
             </p>
         </div>
     </div>
@@ -64,6 +64,9 @@ export default {
         info: {
             type: Array,
             default: []
+        },
+        keyName: {
+            type: String
         },
         choosedItem: {
             type: String,

@@ -13,7 +13,7 @@
                 <div class="list-item__set">
                     <p class="list-item__code">{{task.code}}</p>
                     <p class="list-item__user-info">{{task.user}}</p>
-                    <StatusVue :statusName="'Тестирование'" />
+                    <StatusVue :status="task.status" />
                 </div>
                 <p class="list-item__admin-info">{{task.admin}}</p>
             </div>

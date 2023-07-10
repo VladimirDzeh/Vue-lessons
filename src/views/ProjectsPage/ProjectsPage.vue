@@ -6,7 +6,7 @@
     />
     <PlugVue  
         v-if="projects.length === 0"
-        :plagText="'Не создан ни один проект'"
+        :plugText="'Не создан ни один проект'"
     />
 </div>
 </template>

@@ -37,6 +37,7 @@
                                 <SelectVue 
                                     class="form__input"
                                     :info="projectInfo"
+                                    :keyName="'name'"
                                     :choosedItem="choosedItem"
                                     @choice="chooseItem"
                                 />
@@ -46,6 +47,7 @@
                                 <SelectVue 
                                     class="form__input"
                                     :info="userInfo"
+                                    :keyName="'name'"
                                     :choosedItem="choosedUser"
                                     @choice="chooseUser"
                                     

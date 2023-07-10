@@ -24,6 +24,7 @@
     "svg-sprite-loader": "^6.0.11",
     "svgo": "^3.0.2",
     "svgo-loader": "^4.0.0",
+    "v-click-outside": "^3.2.0",
     "vue-cli-plugin-style-resources-loader": "^0.1.5",
     "vue-cli-plugin-svg-sprite": "^1.1.0",
     "vue-template-compiler": "^2.6.14"
